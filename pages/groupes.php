@@ -91,10 +91,34 @@ if ($_SESSION['user'] == "jean"){
             <div class="col s12">
                 <div class="card">
                     <div class="card-content">
+                        <img src="img/face1.jpg" alt="" class="circle taille_img_profil">
                         Un x² rentre dans une forêt.  Il en ressort en étant x. <br/>Qu'est-ce qu'il a fait ?
 
                         <hr/>
                         <a href="#"><i class="small material-icons">thumb_up</i></a> 6 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:36</span>
+                        <ul class="collection">
+                            <li class="collection-item">Il s'est pris une racine !<br/>
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 4 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:37</span>    
+                            
+                            </li>
+                            <li class="collection-item">Haha
+                            <br/>
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 1 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:38</span>  
+                            
+                            </li>
+                            <li class="collection-item">Ben ça travail bien ici...
+                            <br/>
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:40</span>  
+                            
+                            </li>
+                            <li class="collection-item">
+                                <div class="input-field col s12">
+                                  <input placeholder="Commenter"type="text" class="validate">
+                                </div>
+                                
+                            </li>
+                            
+                          </ul>
                    </div>
                 </div>
             </div>
