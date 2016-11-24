@@ -56,7 +56,44 @@ if ($_SESSION['user'] == "jean"){
                     </ul>
 <?php    
 }
+if ($_SESSION['user'] == "geraldine"){
 ?>
+                     <ul class="collection">
+                        
+                        <li class="collection-item avatar"><a href="#" id="defintel">
+                            <i class="material-icons circle">folder</i>
+                            <span class="title">Défence Intelectuelle</span>
+                            <p>Cours 2016<br>
+                               
+                            </p>
+                            </a>
+                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                            
+                        </li>
+                        
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle">folder</i>
+                            <span class="title">Enseignants Grenoble Alpes</span>
+                            <p>Année 2015/2016<br>
+                            </p>
+                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                        </li>
+                    
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle">folder</i>
+                            <span class="title">Psycologie du viellissement</span>
+                            <p>Cours 2016 <br>
+                        
+                            </p>
+                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                        </li>  
+                 
+                    </ul>
+
+<?php    
+}
+?>
+
                 </div>
             </div>
         </div>
@@ -201,6 +238,7 @@ if ($_SESSION['user'] == "jean"){
 <script>
     $('#groupem2wic').hide();
     $('#membre').hide();
+    $('#preloader').hide();
 
     $('#m2wic').click(function(){
         event.preventDefault();
@@ -268,5 +306,311 @@ if ($_SESSION['user'] == "jean"){
     
 </script>
 <?php    
+}
+if ($_SESSION['user'] == "geraldine"){
+?>
+<div class="container" id="groupedef">
+    <div class="row">
+        <div class="col s12">
+            <div class="card">
+                <div class="card-content">
+                    <span class="card-title">Défence Intelectuelle</span>
+                    
+                    à faire description du groupe
+               </div>
+               <div class="card-action">
+                  <a href="#" id="clickactualite">Fil d'actualité</a>
+                  <a href="#" id="clickdoc">Espace documentaire</a>
+                  <a href="#" id="clickpost">Poster</a>
+                  <a href="#" id="clickmembre">Membres</a>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <?php include('formulaire_post.php');?>
+    <div id="espaced">
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                         <span class="card-title">Espace Documentaire</span>
+                         
+                         
+                         <ul class="collection" id="edocc">
+                             
+                             
+                             
+                            <li class="collection-item">
+                            <img src="img/geraldine.png" alt="" class="circle taille_img_profil">    
+                            <a href="#"><img src="img/pdf.jpg" alt="" class="taille_img_profil">    
+                                <br/>Correction_TP_4.pdf <br/></a>
+                             <span class="right">11 novembre 10:37</span> <br/>    
+                            
+                            </li>
+                            
+                            <li class="collection-item">
+                            <img src="img/geraldine.png" alt="" class="circle taille_img_profil">    
+                            <a href="#"><img src="img/pdf.jpg" alt="" class="taille_img_profil">    
+                                <br/>Correction_TP_3.pdf <br/></a>
+                             <span class="right">5 novembre 16:35</span> <br/>    
+                            
+                            </li>
+                            
+                            <li class="collection-item">
+                            <img src="img/geraldine.png" alt="" class="circle taille_img_profil">    
+                            <a href="#"><img src="img/pdf.jpg" alt="" class="taille_img_profil">    
+                                <br/>CM_1.pdf <br/></a>
+                             <span class="right">11 octobre 10:37</span> <br/>    
+                            
+                            </li>
+                            
+                            <li class="collection-item">
+                            <img src="img/geraldine.png" alt="" class="circle taille_img_profil">    
+                            <a href="#"><img src="img/pdf.jpg" alt="" class="taille_img_profil">    
+                                <br/>Correction_TP_2.pdf <br/></a>
+                             <span class="right">5 octobre 10:37</span> <br/>    
+                            
+                            </li>
+                            
+                            <li class="collection-item">
+                            <img src="img/geraldine.png" alt="" class="circle taille_img_profil">    
+                            <a href="#"><img src="img/pdf.jpg" alt="" class="taille_img_profil">    
+                                <br/>Correction_TP_1.pdf <br/></a>
+                             <span class="right">25 septembre 10:37</span> <br/>    
+                            
+                            </li>
+                           
+                           
+                           
+                            
+                          </ul>
+                         
+                         
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div id="actualite">
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <img src="img/face1.jpg" alt="" class="circle taille_img_profil">
+                        Un x² rentre dans une forêt.  Il en ressort en étant x. <br/>Qu'est-ce qu'il a fait ?
+
+                        <hr/>
+                        <a href="#"><i class="small material-icons">thumb_up</i></a> 6 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:36</span>
+                        <ul class="collection">
+                            <li class="collection-item">
+                            <img src="img/face1.jpg" alt="" class="circle taille_img_profil">    
+                                Il s'est pris une racine !<br/>
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 4 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:37</span>    
+                            
+                            </li>
+                            <li class="collection-item">
+                                <img src="img/face3.jpg" alt="" class="circle taille_img_profil">
+                                Haha
+                            <br/>
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 1 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:38</span>  
+                            
+                            </li>
+                            <li class="collection-item">
+                                <img src="img/face6.jpg" alt="" class="circle taille_img_profil">
+                                Ben ça travail bien ici...
+                            <br/>
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:40</span>  
+                            
+                            </li>
+                            <li class="collection-item">
+                                <div class="input-field col s12">
+                                  <input placeholder="Commenter"type="text" class="validate">
+                                </div>
+                                
+                            </li>
+                            
+                          </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="membre">
+         <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Liste des membres</span>
+                          <ul class="collection">
+                            
+                   
+                            <li class="collection-item avatar">
+                              <img src="img/face1.jpg" alt="" class="circle">
+                              <span class="title">Jean Meurdesoif</span>
+                              <p>Etudiant M2WIC</p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+              
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face2.jpg" alt="" class="circle">
+                              <span class="title">Jerry Kan</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+                       
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face3.jpg" alt="" class="circle">
+                              <span class="title">Juda Bricot </span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face4.jpg" alt="" class="circle">
+                              <span class="title">Kelly Diote</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face5.jpg" alt="" class="circle">
+                              <span class="title">Ray Defesse</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face6.jpg" alt="" class="circle">
+                              <span class="title">Sarah Courci</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+                            
+                          </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    $('#groupedef').hide();
+    $('#membre').hide();
+    $("#preloader").hide();
+
+    $('#defintel').click(function(){
+        event.preventDefault();
+        $('#groupes').hide();
+        $('#groupedef').fadeIn();
+        $('#poster').hide();
+        $('#espaced').hide();
+    });
+    
+    $('#clickdoc').click(function(){
+        event.preventDefault();
+        $('#poster').hide();
+        $('#actualite').hide();
+        $('#membre').hide();
+        $('#espaced').show();
+    });
+    
+    
+    $('#clickactualite').click(function(){
+        event.preventDefault();
+        $('#poster').hide();
+        $('#actualite').show();
+        $('#membre').hide();
+        $('#espaced').hide();
+    });
+    
+    $('#clickpost').click(function(){
+        event.preventDefault();
+        $('#poster').show();
+        $('#actualite').hide();
+        $('#membre').hide();
+        $('#espaced').hide();
+    });
+    
+    $('#clickmembre').click(function(){
+        event.preventDefault();
+        $('#membre').show();
+        $('#actualite').hide();
+        $('#poster').hide();
+        $('#espaced').hide();
+    });
+    
+    $('#add_post').click(function(){
+        $("#preloader").show();
+        
+        setTimeout(function(){  
+        $("#preloader").hide();
+        $('#poster').hide();
+        var datenow = new Date();
+        var nvpost = `
+        <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content"> <img src="img/geraldine.png" alt="" class="circle taille_img_profil">`
+        nvpost+= $('#textarea1').val().replace(/\n/g, '<br />')+                
+                        
+                   `
+                   <br/>
+                   <a href="files/Correction_Exercice.pdf"><img src="img/pdf.jpg" alt="" class="taille_img_profil">    
+                                <br/>Correction_Exercice.pdf <br/></a>
+                   <hr/>
+                   <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 
+                   <span class="right"> 9 Décembre `+ datenow.getHours() +`:`+datenow.getMinutes() +`</span> 
+                   
+                    <ul class="collection">
+                        <li class="collection-item">
+                                <div class="input-field col s12">
+                                  <input placeholder="Commenter"type="text" class="validate">
+                                </div>
+                                
+                        </li>
+                    
+                    </ul>
+                   </div>
+                </div>
+            </div>
+        </div>`;
+        var docu = `<li class="collection-item">
+                            <img src="img/geraldine.png" alt="" class="circle taille_img_profil">    
+                            <a href="files/Correction_Exercice.pdf"><img src="img/pdf.jpg" alt="" class="taille_img_profil">    
+                                <br/>Correction_Exercice.pdf <br/></a>
+                             <span class="right">9 Décembre `+ datenow.getHours() + `:`+datenow.getMinutes()  +`</span> <br/>    
+                            
+                            </li>`;
+        $('#edocc').prepend(docu);                    
+                            
+        $('#actualite').prepend(nvpost);
+        $('#actualite').show();
+        }, 5000);
+    });
+    
+    
+    
+</script>
+
+
+
+
+<?php
+
+
+
+
 }
 ?>
