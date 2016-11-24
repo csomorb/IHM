@@ -77,10 +77,10 @@ if ($_SESSION['user'] == "jean"){
                     à faire description du groupe
                </div>
                <div class="card-action">
-                  <a href="#">Fil d'actualité</a>
+                  <a href="#" id="clickactualite">Fil d'actualité</a>
                   <a href="#">Espace documentaire</a>
                   <a href="#" id="clickpost">Poster</a>
-                  <a href="#">Membres</a>
+                  <a href="#" id="clickmembre">Membres</a>
                 </div>
             </div>
         </div>
@@ -91,18 +91,86 @@ if ($_SESSION['user'] == "jean"){
             <div class="col s12">
                 <div class="card">
                     <div class="card-content">
-                        
-                        à faire: fil d'actualité
+                        Un x² rentre dans une forêt.  Il en ressort en étant x. <br/>Qu'est-ce qu'il a fait ?
+
+                        <hr/>
+                        <a href="#"><i class="small material-icons">thumb_up</i></a> 6 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:36</span>
                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="membre">
+         <div class="row">
+            <div class="col s12">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Liste des membres</span>
+                          <ul class="collection">
+                            
+                   
+                            <li class="collection-item avatar">
+                              <img src="img/face1.jpg" alt="" class="circle">
+                              <span class="title">Jean Meurdesoif</span>
+                              <p>Etudiant M2WIC</p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+              
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face2.jpg" alt="" class="circle">
+                              <span class="title">Jerry Kan</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+                       
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face3.jpg" alt="" class="circle">
+                              <span class="title">Juda Bricot </span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face4.jpg" alt="" class="circle">
+                              <span class="title">Kelly Diote</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face5.jpg" alt="" class="circle">
+                              <span class="title">Ray Defesse</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face6.jpg" alt="" class="circle">
+                              <span class="title">Sarah Courci</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
+                            </li>
+                            
+                          </ul>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 
 <script>
     $('#groupem2wic').hide();
+    $('#membre').hide();
 
     $('#m2wic').click(function(){
         event.preventDefault();
@@ -111,10 +179,26 @@ if ($_SESSION['user'] == "jean"){
         $('#poster').hide();
     });
     
+    
+    $('#clickactualite').click(function(){
+        event.preventDefault();
+        $('#poster').hide();
+        $('#actualite').show();
+        $('#membre').hide();
+    });
+    
     $('#clickpost').click(function(){
         event.preventDefault();
         $('#poster').show();
-        $('actualite').hide();
+        $('#actualite').hide();
+        $('#membre').hide();
+    });
+    
+    $('#clickmembre').click(function(){
+        event.preventDefault();
+        $('#membre').show();
+        $('#actualite').hide();
+        $('#poster').hide();
     });
     
     $('#add_post').click(function(){
@@ -124,15 +208,21 @@ if ($_SESSION['user'] == "jean"){
             <div class="col s12">
                 <div class="card">
                     <div class="card-content">`
-        nvpost+= $('#textarea1').val()+                
+        nvpost+= $('#textarea1').val().replace(/\n/g, '<br />')+                
                         
-                   `</div>
+                   `
+                   <br/>
+                   <hr/>
+                   <i class="small material-icons">thumb_up</i> 0 <i class="small material-icons">thumb_down</i> 0 
+                   </div>
                 </div>
             </div>
         </div>`;
         $('#actualite').prepend(nvpost);
         $('#actualite').show();
     });
+    
+    
     
 </script>
 <?php    
