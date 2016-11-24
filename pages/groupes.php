@@ -97,16 +97,22 @@ if ($_SESSION['user'] == "jean"){
                         <hr/>
                         <a href="#"><i class="small material-icons">thumb_up</i></a> 6 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:36</span>
                         <ul class="collection">
-                            <li class="collection-item">Il s'est pris une racine !<br/>
+                            <li class="collection-item">
+                            <img src="img/face1.jpg" alt="" class="circle taille_img_profil">    
+                                Il s'est pris une racine !<br/>
                             <a href="#"><i class="small material-icons">thumb_up</i></a> 4 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:37</span>    
                             
                             </li>
-                            <li class="collection-item">Haha
+                            <li class="collection-item">
+                                <img src="img/face3.jpg" alt="" class="circle taille_img_profil">
+                                Haha
                             <br/>
                             <a href="#"><i class="small material-icons">thumb_up</i></a> 1 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:38</span>  
                             
                             </li>
-                            <li class="collection-item">Ben ça travail bien ici...
+                            <li class="collection-item">
+                                <img src="img/face6.jpg" alt="" class="circle taille_img_profil">
+                                Ben ça travail bien ici...
                             <br/>
                             <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:40</span>  
                             

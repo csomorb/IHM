@@ -1,4 +1,6 @@
 .taille_img_profil{
     width : 55px;
     height : 55px;
+    float:left;
+    margin-right: 5px;
 }
