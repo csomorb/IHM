@@ -3,8 +3,9 @@
         <div class="col s2">
             <!-- menu latéral gauche page d'accueil -->
             <div class="card-panel">
-                <img class="responsive-img circle" src="img/jean.png">
-               Bonjour <?php echo $_SESSION['user']; ?>
+                <?php if ($_SESSION['user'] == "jean"){ ?><img class="responsive-img circle" src="img/jean.png"><?php } ?>
+                <?php if ($_SESSION['user'] == "geraldine"){ ?><img class="responsive-img circle" src="img/geraldine.png"><?php } ?>
+                Bonjour <?php echo $_SESSION['user']; ?>
                 <hr/>
                 <!-- affichage des groupes -->
                 <span class="grey-text darken-3-text">RACCOURCIS</span>
@@ -14,13 +15,18 @@
                         <li><a href="#!" class="title-menu-accueil collection-item active">Master WIC</a></li>
                         <li><a href="#!" class="title-menu-accueil collection-item">Les anciens camarades</a></li>
                     <?php } ?>
+                    <?php if ($_SESSION['user'] == "geraldine"){ ?>
+                        <li><a href="#!" class="title-menu-accueil collection-item">Défence Intelectuelle</a></li>
+                        <li><a href="#!" class="title-menu-accueil collection-item active">Enseignants Grenoble Alpes</a></li>
+                        <li><a href="#!" class="title-menu-accueil collection-item">Psycologie du viellissement</a></li>
+                    <?php } ?>
                 </ul>
                 <hr/>
                 <span class="grey-text darken-3-text">PARCOURIR</span>
                 <ul>
-                    <li><a href="#!" class="/groupe">Groupes</a></li>
-                    <li><a href="#!" class="/page">Pages</a></li>
-                    <li><a href="#!" class="/evenement">Évenements</a></li>
+                    <li><a href="#!" class="title-menu-accueil /groupe">Groupes</a></li>
+                    <li><a href="#!" class="title-menu-accueil /page">Pages</a></li>
+                    <li><a href="#!" class="title-menu-accueil /evenement">Évenements</a></li>
                 </ul>
             </div>
         </div>
