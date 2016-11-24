@@ -233,17 +233,29 @@ if ($_SESSION['user'] == "jean"){
     
     $('#add_post').click(function(){
         $('#poster').hide();
+        var datenow = new Date();
         var nvpost = `
         <div class="row">
             <div class="col s12">
                 <div class="card">
-                    <div class="card-content">`
+                    <div class="card-content"> <img src="img/jean.png" alt="" class="circle taille_img_profil">`
         nvpost+= $('#textarea1').val().replace(/\n/g, '<br />')+                
                         
                    `
                    <br/>
                    <hr/>
-                   <i class="small material-icons">thumb_up</i> 0 <i class="small material-icons">thumb_down</i> 0 
+                   <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 
+                   <span class="right"> 9 Décembre `+ datenow.getHours() +`:`+datenow.getMinutes() +`</span> 
+                   
+                    <ul class="collection">
+                        <li class="collection-item">
+                                <div class="input-field col s12">
+                                  <input placeholder="Commenter"type="text" class="validate">
+                                </div>
+                                
+                        </li>
+                    
+                    </ul>
                    </div>
                 </div>
             </div>
