@@ -397,45 +397,41 @@ if ($_SESSION['user'] == "geraldine"){
         <div class="row">
             <div class="col s12">
                 <div class="card">
-                    <div class="card-content">
-                        <img src="img/face1.jpg" alt="" class="circle taille_img_profil">
-                        Un x² rentre dans une forêt.  Il en ressort en étant x. <br/>Qu'est-ce qu'il a fait ?
-
-                        <hr/>
-                        <a href="#"><i class="small material-icons">thumb_up</i></a> 6 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:36</span>
-                        <ul class="collection">
-                            <li class="collection-item">
+                    <div class="card-content"> <img src="img/geraldine.png" alt="" class="circle taille_img_profil">
+                  
+                   <a href="files/Correction_Exercice.pdf"><img src="img/pdf.jpg" alt="" class="taille_img_profil">    
+                                <br/>Correction_TP4.pdf <br/></a>
+                                <br/>Bonjour, voici la correction du TP4
+                   <hr/>
+                   <a href="#"><i class="small material-icons">thumb_up</i></a> 1 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 
+                   <span class="right"> 11 novembre 10:25</span> 
+                   
+                    <ul class="collection">
+                        
+                        <li class="collection-item">
                             <img src="img/face1.jpg" alt="" class="circle taille_img_profil">    
-                                Il s'est pris une racine !<br/>
-                            <a href="#"><i class="small material-icons">thumb_up</i></a> 4 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:37</span>    
+                                Merci<br/>
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:37</span>    
                             
                             </li>
-                            <li class="collection-item">
-                                <img src="img/face3.jpg" alt="" class="circle taille_img_profil">
-                                Haha
-                            <br/>
-                            <a href="#"><i class="small material-icons">thumb_up</i></a> 1 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:38</span>  
-                            
-                            </li>
-                            <li class="collection-item">
-                                <img src="img/face6.jpg" alt="" class="circle taille_img_profil">
-                                Ben ça travail bien ici...
-                            <br/>
-                            <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:40</span>  
-                            
-                            </li>
-                            <li class="collection-item">
+                        
+                        
+                        <li class="collection-item">
                                 <div class="input-field col s12">
                                   <input placeholder="Commenter"type="text" class="validate">
                                 </div>
                                 
-                            </li>
-                            
-                          </ul>
+                        </li>
+                    
+                    </ul>
                    </div>
                 </div>
             </div>
         </div>
+        
+        
+        
+        
     </div>
     <div id="membre">
          <div class="row">
