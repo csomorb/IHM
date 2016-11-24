@@ -241,7 +241,7 @@ if ($_SESSION['user'] == "jean"){
     $('#preloader').hide();
 
     $('#m2wic').click(function(){
-        event.preventDefault();
+   //     event.preventDefault();
         $('#groupes').hide();
         $('#groupem2wic').fadeIn();
         $('#poster').hide();
@@ -249,21 +249,21 @@ if ($_SESSION['user'] == "jean"){
     
     
     $('#clickactualite').click(function(){
-        event.preventDefault();
+    //    event.preventDefault();
         $('#poster').hide();
         $('#actualite').show();
         $('#membre').hide();
     });
     
     $('#clickpost').click(function(){
-        event.preventDefault();
+    //    event.preventDefault();
         $('#poster').show();
         $('#actualite').hide();
         $('#membre').hide();
     });
     
     $('#clickmembre').click(function(){
-        event.preventDefault();
+    //    event.preventDefault();
         $('#membre').show();
         $('#actualite').hide();
         $('#poster').hide();
@@ -511,7 +511,7 @@ if ($_SESSION['user'] == "geraldine"){
     $("#preloader").hide();
 
     $('#defintel').click(function(){
-        event.preventDefault();
+     //   event.preventDefault();
         $('#groupes').hide();
         $('#groupedef').fadeIn();
         $('#poster').hide();
@@ -519,7 +519,7 @@ if ($_SESSION['user'] == "geraldine"){
     });
     
     $('#clickdoc').click(function(){
-        event.preventDefault();
+    //    event.preventDefault();
         $('#poster').hide();
         $('#actualite').hide();
         $('#membre').hide();
@@ -528,7 +528,7 @@ if ($_SESSION['user'] == "geraldine"){
     
     
     $('#clickactualite').click(function(){
-        event.preventDefault();
+    //    event.preventDefault();
         $('#poster').hide();
         $('#actualite').show();
         $('#membre').hide();
@@ -536,7 +536,7 @@ if ($_SESSION['user'] == "geraldine"){
     });
     
     $('#clickpost').click(function(){
-        event.preventDefault();
+     //   event.preventDefault();
         $('#poster').show();
         $('#actualite').hide();
         $('#membre').hide();
@@ -544,7 +544,7 @@ if ($_SESSION['user'] == "geraldine"){
     });
     
     $('#clickmembre').click(function(){
-        event.preventDefault();
+     //   event.preventDefault();
         $('#membre').show();
         $('#actualite').hide();
         $('#poster').hide();
