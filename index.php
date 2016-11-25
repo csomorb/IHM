@@ -51,7 +51,7 @@
             }
         ?>
         
-        
+        <div id="res_recherche"></div>
         
        
     </body>
