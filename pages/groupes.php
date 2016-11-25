@@ -146,8 +146,6 @@ if ($_SESSION['user'] == "jean"){
             <div class="card">
                 <div class="card-content">
                     <span class="card-title">M2WIC</span>
-                    
-                    à faire description du groupe
                </div>
                <div class="card-action">
                   <a href="#" id="clickactualite">Fil d'actualité</a>
@@ -202,7 +200,7 @@ if ($_SESSION['user'] == "jean"){
                 </div>
             </div>
         </div>
-    </div>
+    </div>
     <div id="membre">
          <div class="row">
             <div class="col s12">
@@ -351,14 +349,13 @@ if ($_SESSION['user'] == "geraldine"){
             <div class="card">
                 <div class="card-content">
                     <span class="card-title">Défence Intelectuelle</span>
-                    
-                    à faire description du groupe
                </div>
                <div class="card-action">
                   <a href="#" id="clickactualite">Fil d'actualité</a>
                   <a href="#" id="clickdoc">Espace documentaire</a>
                   <a href="#" id="clickpost">Poster</a>
                   <a href="#" id="clickmembre">Membres</a>
+                  <a href="#" id="clickmembre">Avis</a>
                 </div>
             </div>
         </div>
@@ -367,7 +364,7 @@ if ($_SESSION['user'] == "geraldine"){
     <div id="espaced">
         <div class="row">
             <div class="col s12">
-                <div class="card">
+                <div class="card">
                     <div class="card-content">
                          <span class="card-title">Espace Documentaire</span>
                          
@@ -416,7 +413,7 @@ if ($_SESSION['user'] == "geraldine"){
                             
                             </li>
                            
-                           
+                           
                            
                             
                           </ul>
@@ -650,8 +647,6 @@ if ($_SESSION['user'] == "juliette"){
             <div class="card">
                 <div class="card-content">
                     <span class="card-title">IHM</span>
-                    
-                    à faire description du groupe
                </div>
                <div class="card-action">
                   <a href="#" id="clickactualite">Fil d'actualité</a>
@@ -733,24 +728,15 @@ if ($_SESSION['user'] == "juliette"){
         <div class="row">
             <div class="col s12">
                 <div class="card">
-                    <div class="card-content"> <img src="img/geraldine.png" alt="" class="circle taille_img_profil">
+                    <div class="card-content"> <img src="img/face4.jpg" alt="" class="circle taille_img_profil">
                   
-                   <a href="files/Correction_Exercice.pdf"><img src="img/pdf.jpg" alt="" class="taille_img_profil">    
-                                <br/>Correction_TP4.pdf <br/></a>
-                                <br/>Bonjour, voici la correction du TP4
+                   Le cours de jeudi est décalé à vendredi.
                    <hr/>
                    <a href="#"><i class="small material-icons">thumb_up</i></a> 1 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 
                    <span class="right"> 11 novembre 10:25</span> 
                    
                     <ul class="collection">
-                        
-                        <li class="collection-item">
-                            <img src="img/face1.jpg" alt="" class="circle taille_img_profil">    
-                                Merci<br/>
-                            <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:37</span>    
-                            
-                            </li>
-                        
+                    
                         
                         <li class="collection-item">
                                 <div class="input-field col s12">

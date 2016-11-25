@@ -1,4 +1,5 @@
 <script>
+$(".button-collapse").sideNav();
 $(document).ready(function() { 
   $('#search').keypress(function(){
     if ($('#search').val().length < 1 ){
@@ -13,7 +14,7 @@ $(document).ready(function() {
             <div class="card-content">
       
       `;
-      var noms="jean bonjean bossjean douilletjeanne darcjean meurdesoifjerry kanjuda bricotkelly diotesarha courci";
+      var noms="jean bonjean bossjean douilletjeanne darcjean meurdesoifjerry kanjuda bricotkelly diotesarha courci licence psychologie";
       var rech = $('#search').val();
       if (noms.indexOf(rech) === -1){
         res+=`<span class="card-title">Aucun résultat ne correspond à votre recherche</span>`;
@@ -55,6 +56,12 @@ $(document).ready(function() {
         if ('sarha courci'.indexOf(rech) > -1 ){
           res+=debut+"face4.jpg"+mil+"Sarha Courci"+fin;
         }
+        if ('licence psychologie'.indexOf(rech) > -1 ){
+          res+=debut+"face4.jpg"+mil+"Licence psychologie"+fin;
+        }
+        if ('licence psychologie'.indexOf(rech) > -1 ){
+          res+=debut+"face4.jpg"+mil+"Licence psychologie"+fin;
+        }
       
         res+=`</ul>`;
       }
@@ -75,13 +82,14 @@ $(document).ready(function() {
 <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper blue lighten-4">
-        <div class="container">
+        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+  <!--      <div class="container">
           
           <!--<div class="search-wrapper card">
             <input id="search"><i class="material-icons">search</i>
             <div class="search-results"></div>
           </div>-->
-          <div class="row">
+   <!--       <$(".button-collapse").sideNav();div class="row">
             <div class="col s6">
               <form>
                 <div class="input-field">
@@ -100,8 +108,39 @@ $(document).ready(function() {
                 <li><a href="/evenement">Evénements</a></li>
                 <li><a href="/logout_action.php">Logout</a></li>
               </ul>
+              
             </div>
-        </div>
+        </div>-->
+        
+        
+        
+        
+        
+        <ul class="right hide-on-med-and-down">
+            <li>   <form>
+        <div class="input-field">
+          <input id="search" type="search" required>
+          <label for="search"><i class="material-icons">search</i></label>
+          <i class="material-icons">close</i>
+        </div></li> 
+      </form>
+                <li><a href="/accueil"><?php echo $_SESSION['user']; ?></a></li>
+                <li><a href="/messagerie">Messagerie</a></li>
+                <li><a href="/groupes">Groupes</a></li>
+                <li><a href="/ami">Amis</a></li>
+                <li><a href="/evenement">Evénements</a></li>
+                <li><a href="/logout_action.php">Logout</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-demo">
+          <li><a href="/accueil"><?php echo $_SESSION['user']; ?></a></li>
+          <li><a href="/messagerie">Messagerie</a></li>
+          <li><a href="/groupes">Groupes</a></li>
+          <li><a href="/ami">Amis</a></li>
+          <li><a href="/evenement">Evénements</a></li>
+          <li><a href="/logout_action.php">Logout</a></li>
+        </ul>
+        
+        
       </nav>
     </div>
   </div>
