@@ -6,7 +6,7 @@ $(document).ready(function() {
       $('.navbar-fixed').next().show();
     }
     else{
-      $('.navbar-fixed').next().hide();
+      $('.navbar-fixed').next().next().next().hide();
       var res = `<div class="container">
       <div class="row">
         <div class="col s12">
@@ -79,6 +79,9 @@ $(document).ready(function() {
   
 </script>
 
+
+
+
 <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper blue lighten-4">
@@ -101,7 +104,7 @@ $(document).ready(function() {
             </div>
             <div class="col s6">
               <ul class="right hide-on-med-and-down">
-                <li><a href="/accueil"><?php echo $_SESSION['user']; ?></a></li>
+                <li><a href="/accueil"><?php //echo $_SESSION['user']; ?></a></li>
                 <li><a href="/messagerie">Messagerie</a></li>
                 <li><a href="/groupes">Groupes</a></li>
                 <li><a href="/ami">Amis</a></li>
@@ -113,17 +116,17 @@ $(document).ready(function() {
         </div>-->
         
         
-        
-        
-        
-        <ul class="right hide-on-med-and-down">
-            <li>   <form>
+     <form id="search_field">
         <div class="input-field">
           <input id="search" type="search" required>
           <label for="search"><i class="material-icons">search</i></label>
-          <i class="material-icons">close</i>
-        </div></li> 
+          <i class="material-icons" id="close_search">close</i>
+        </div>
       </form>
+        
+        <ul class="right hide-on-med-and-down">
+         
+                <li><a href="#" class="searchclick"><i class="material-icons">search</i></a></li>
                 <li><a href="/accueil"><?php echo $_SESSION['user']; ?></a></li>
                 <li><a href="/messagerie">Messagerie</a></li>
                 <li><a href="/groupes">Groupes</a></li>
@@ -132,6 +135,7 @@ $(document).ready(function() {
                 <li><a href="/logout_action.php">Logout</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
+          <li><a href="#" class="searchclick"><i class="material-icons">search</i></a></li>
           <li><a href="/accueil"><?php echo $_SESSION['user']; ?></a></li>
           <li><a href="/messagerie">Messagerie</a></li>
           <li><a href="/groupes">Groupes</a></li>
@@ -144,3 +148,29 @@ $(document).ready(function() {
       </nav>
     </div>
   </div>
+
+
+<script>
+  $(".button-collapse").sideNav();
+  $("#search_field").hide();
+  $(".searchclick").click(function(){
+    $(".hide-on-med-and-down").hide();
+    $("#search_field").show();
+    $("#search").focus();
+  });
+  
+   $("#close_search").click(function(){
+    $(".hide-on-med-and-down").show();
+    $("#search_field").hide();
+    $("#search").focus();
+    $('#res_recherche').hide();
+    $('.navbar-fixed').next().next().next().show();
+  });
+  
+ /*  $(".searchclick").mouseover(function(){
+    $(".hide-on-med-and-down").hide();
+    $("#search_field").show();
+    $("#search").focus();
+  });
+  */
+</script>
