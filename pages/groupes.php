@@ -854,8 +854,8 @@ if ($_SESSION['user'] == "juliette"){
     <form class="col s12">
       <div class="row">
         <div class="input-field col s12">
-          <input placeholder="Votre avis" id="avis_cours" type="text" class="validate">
-          <label for="first_name">Votre avis sur le cours</label>
+          <input placeholder="Votre avis" id="avic" type="text" class="validate">
+          <label for="avis_cours">Votre avis sur le cours</label>
         </div>
       </div>    
     </form>    
@@ -879,7 +879,15 @@ if ($_SESSION['user'] == "juliette"){
 		--><a href="#2" title="Bof">★</a><!--
 		--><a href="#1" title="Fuyez pauvres fous">★</a>
                     	</div>
-                        
+                        Score de 5.0 sur un total de <span id="nb">126</span> votes.
+                        <ul class="collection" id="liste_avis">
+                            <li class="collection-item">
+                            <img src="img/face1.jpg" alt="" class="circle taille_img_profil">    
+                                Interesting !<br/>
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 4 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:37</span>    
+                            
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -893,6 +901,17 @@ if ($_SESSION['user'] == "juliette"){
 <script>
     $('#pub_avis').click(function() {
        $("#form_avis").html("Votre avis a été pris en compte!"); 
+       $('#nb').text(127);
+       var datenow = new Date();
+       var avisl = `
+                            <li class="collection-item">
+                            <img src="img/juliette.png" alt="" class="circle taille_img_profil">    
+                                cours au top<br/>
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">9 décembre `+ datenow.getHours() +`:`+datenow.getMinutes() +`</span>    
+                            
+                            </li>`;
+       $('#liste_avis').prepend(avisl);
+       
     });
 
 
