@@ -1,7 +1,7 @@
 <script>
 $(document).ready(function() { 
   $('#search').keypress(function(){
-    if ($('#search').val().length < 2 ){
+    if ($('#search').val().length < 1 ){
       $('.navbar-fixed').next().show();
     }
     else{
@@ -13,7 +13,7 @@ $(document).ready(function() {
             <div class="card-content">
       
       `;
-      var noms="jeanbonjeanbossjeandouilletjeannedarcjeanmeurdesoifjerrykanjudabricotkellydiotesarhacourci";
+      var noms="jean bonjean bossjean douilletjeanne darcjean meurdesoifjerry kanjuda bricotkelly diotesarha courci";
       var rech = $('#search').val();
       if (noms.indexOf(rech) === -1){
         res+=`<span class="card-title">Aucun résultat ne correspond à votre recherche</span>`;
