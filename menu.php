@@ -25,10 +25,20 @@ $(document).ready(function() {
                               <img src="img/`;
         var mil =`" alt="" class="circle">
                               <a href="/profilJean"><span class="title">`;
+        var mil2 =`" alt="" class="circle">
+                              <a href="/licencePsychoGrenoble"><span class="title">`;                      
         var fin =`</span></a><br/>
                           <a class="waves-effect waves-light btn">Ajouter comme ami</a>
                               <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
-                            </li>`;                      
+                            </li>`;   
+        var fin2 = `</span></a><br/>
+                          
+                             <a href="#" class="waves-effect waves-light btn secondary-content" onClick="change();" id="ad">Rejoindre</a>
+                            </li>`;
+        var fin3 = `</span></a><br/>
+                          
+                             <a href="#" class="waves-effect waves-light btn secondary-content">Rejoindre</a>
+                            </li>`;
         if ('jean bon'.indexOf(rech) > -1 ){
           res+=debut+"face1.jpg"+mil+"Jean Bon"+fin;
         }
@@ -57,10 +67,10 @@ $(document).ready(function() {
           res+=debut+"face4.jpg"+mil+"Sarha Courci"+fin;
         }
         if ('licence psychologie'.indexOf(rech) > -1 ){
-          res+=debut+"face4.jpg"+mil+"Licence psychologie"+fin;
+          res+=debut+"face4.jpg"+mil2+"Licence psychologie <br/> Grenoble "+fin2;
         }
         if ('licence psychologie'.indexOf(rech) > -1 ){
-          res+=debut+"face4.jpg"+mil+"Licence psychologie"+fin;
+          res+=debut+"face4.jpg"+mil+"Licence psychologie <br/> Valence "+fin3;;
         }
       
         res+=`</ul>`;
@@ -76,6 +86,9 @@ $(document).ready(function() {
   });
 });  
   
+  function change(){
+    $('#ad').text('Quitter');
+  }
   
 </script>
 
@@ -86,35 +99,6 @@ $(document).ready(function() {
     <nav>
       <div class="nav-wrapper blue lighten-4">
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-  <!--      <div class="container">
-          
-          <!--<div class="search-wrapper card">
-            <input id="search"><i class="material-icons">search</i>
-            <div class="search-results"></div>
-          </div>-->
-   <!--       <$(".button-collapse").sideNav();div class="row">
-            <div class="col s6">
-              <form>
-                <div class="input-field">
-                  <input id="search" type="search">
-                  <label for="search"><i class="material-icons">search</i></label>
-                  <i class="material-icons"></i>
-                </div>
-              </form>
-            </div>
-            <div class="col s6">
-              <ul class="right hide-on-med-and-down">
-                <li><a href="/accueil"><?php //echo $_SESSION['user']; ?></a></li>
-                <li><a href="/messagerie">Messagerie</a></li>
-                <li><a href="/groupes">Groupes</a></li>
-                <li><a href="/ami">Amis</a></li>
-                <li><a href="/evenement">Evénements</a></li>
-                <li><a href="/logout_action.php">Logout</a></li>
-              </ul>
-              
-            </div>
-        </div>-->
-        
         
      <form id="search_field">
         <div class="input-field">
@@ -135,7 +119,7 @@ $(document).ready(function() {
                 <li><a href="/logout_action.php">Logout</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-          <li><a href="#" class="searchclick"><i class="material-icons">search</i></a></li>
+          <li><a href="#">Recherche</a></li>
           <li><a href="/accueil"><?php echo $_SESSION['user']; ?></a></li>
           <li><a href="/messagerie">Messagerie</a></li>
           <li><a href="/groupes">Groupes</a></li>
@@ -167,10 +151,4 @@ $(document).ready(function() {
     $('.navbar-fixed').next().next().next().show();
   });
   
- /*  $(".searchclick").mouseover(function(){
-    $(".hide-on-med-and-down").hide();
-    $("#search_field").show();
-    $("#search").focus();
-  });
-  */
 </script>

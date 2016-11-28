@@ -1,18 +1,5 @@
 <div class="container" id="groupes">
 
-    <div class="row">
-        <div class="col s12">
-            <div class="card-panel">
-               <form>
-                <div class="input-field">
-                  <input id="search" type="search" required>
-                  <label for="search"><i class="material-icons">search</i>Rechercher un groupe</label>
-                  <i class="material-icons">close</i>
-                </div>
-              </form>
-            </div>
-        </div>
-    </div>
 
     <div class="row">
         <div class="col s12">
@@ -364,7 +351,7 @@ if ($_SESSION['user'] == "geraldine"){
     <div id="espaced">
         <div class="row">
             <div class="col s12">
-                <div class="card">
+                <div class="card">
                     <div class="card-content">
                          <span class="card-title">Espace Documentaire</span>
                          
@@ -413,7 +400,7 @@ if ($_SESSION['user'] == "geraldine"){
                             
                             </li>
                            
-                           
+                           
                            
                             
                           </ul>
