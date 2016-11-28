@@ -39,6 +39,7 @@
         
         <?php
         
+        
             if ($params !== "login" && $params !== "loginerr")
                 include('menu.php');
         

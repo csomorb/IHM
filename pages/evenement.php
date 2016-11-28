@@ -1,3 +1,5 @@
+
+
 <div class="container">
     
     <div class="row">
@@ -24,21 +26,40 @@
               <div class="row">
                 <div class="input-field col s12">
                   <input placeholder="Nom de l'événement" id="nom" type="text" class="validate">
-                  <label for="nom">Nom de l'événement</label>
+                  <label for="nom">Nom</label>
                 </div>
               </div>
               
               <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Description</label>
+                  </div>
+                </div>
+              
+              
+              <div class="row">
                 <div class="input-field col s6">
-                  <input type="date" class="datepicker" id="date_deb">
-                  <label for="date_deb">Début</label>
+                  <div class="form-control-wrapper">
+                      
+								<input type="text" id="date-start" class="form-control floating-label" placeholder="Début de l'événement">
+								<label for="date-start">Début</label>
+				  </div>
                 </div>
                 <div class="input-field col s6">
-                  <input type="date" class="datepicker" id="date_fin">
-                  <label for="date_fin">Fin</label>
+                  <div class="form-control-wrapper">
+								<input type="text" id="date-end" class="form-control floating-label" placeholder="Fin  de l'événement">
+								<label for="date-end">Fin</label>
+							</div>
                 </div>
               </div>
               
+              <div class="row">
+                <div class="input-field col s12">
+                  <input placeholder="Lieu de l'événement" id="lieu" type="text" class="validate">
+                  <label for="lieu">Lieu</label>
+                </div>
+              </div>
               
               <div class="row">
                 <!-- Switch -->
@@ -74,10 +95,24 @@
     
 </div>
 
+
+
+<script src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>
+<script src="../js/datetimepicker.js"></script>
+
 <script>
-    $('.datepicker').pickadate({
-    selectMonths: true, // Creates a dropdown to control month
-    selectYears: 5 // Creates a dropdown of 15 years to control year
-  });
+$('#date-end').bootstrapMaterialDatePicker
+			({
+				weekStart: 0, format: 'DD/MM/YYYY HH:mm'
+			});
+			$('#date-start').bootstrapMaterialDatePicker
+			({
+				weekStart: 0, format: 'DD/MM/YYYY HH:mm', shortTime : true
+			}).on('change', function(e, date)
+			{
+				$('#date-end').bootstrapMaterialDatePicker('setMinDate', date);
+			});
+
+
     
 </script>
