@@ -94,8 +94,47 @@
       </div>
     
     
-    <div class="row" id="mes_event">
-        <div class="col s12">
+    <div class="row" id="mes_event1">
+        
+        <div id="mes_event">
+          <div class="col s12">
+          <div class="card">
+            <div class="card-content"><div class="card-image"><img src="img/meeting.jpg">
+              <span class="card-title" id="titre_event">
+              </span></div>
+              <p id="event_contenu"></p>
+              <a class="waves-effect waves-light btn" id="ajout_click" href="#">Ajouter des personnes</a>
+              
+              
+              <hr/>
+               <div class="row" id="poster">
+ 
+                      <div class="row">
+                        <div class="input-field col s12">
+                          <textarea id="textarea1" class="materialize-textarea"></textarea>
+                          <label for="textarea1">Contenu du post</label>
+                        </div>
+                      </div>
+  
+                  
+
+  
+                  <button class="btn waves-effect waves-light" type="submit" name="action" id="add_post">Poster
+                  </button>
+                  
+                  
+              </div>  
+              
+              
+              
+            </div>
+          </div>
+      </div>
+          
+          
+        </div>
+      
+        <div class="col s12" id="mes_event2">
           <div class="card">
             <div class="card-content">
               <span class="card-title">Mes événements</span>
@@ -105,8 +144,7 @@
         </div>
       </div>
     
-    <div class="row" id="mes_event">
-    </div>
+
     
     <div class="row" id="ajout_ami">
         <div class="col s12">
@@ -214,22 +252,22 @@ $('#date-end').bootstrapMaterialDatePicker
 
 $('#ajout_ami').hide();
 $('#mes_event').hide();
+//$('.mes_event').show();
+$('.mes_event2').show();
+$('#crer_event').hide();
+
+
+$('#click_crer').click(function() {
+  $('#mes_event1').hide();
+  $('#crer_event').show();
+})
     
 $('#crer_click').click(function(){
-    var res=`
-        <div class="col s12">
-          <div class="card">
-            <div class="card-content"><div class="card-image"><img src="img/meeting.jpg">
-              <span class="card-title">`
-              + $('#nom').val()
-              +
-              `</span></div>
-              <p>Début `+ $('#date-start').val() + ` Fin: `+ $('#date-end').val()+ ` Lieu : `+ $('#lieu').val() + `<br/> `+ $('#textarea1').val().replace(/\n/g, '<br />')+ ` </p>
-              <a class="waves-effect waves-light btn" id="ajout_click" href="#">Ajouter des personnes</a>
-            </div>
-          </div>
-      </div>`;
-    $('#mes_event').append(res);
+  $('#titre_event').text($('#nom').val());
+  var res= `Début `+ $('#date-start').val() + ` Fin: `+ $('#date-end').val()+ ` Lieu : `+ $('#lieu').val() + `<br/> `+ $('#textarea1').val().replace(/\n/g, '<br />');
+  $('#event_contenu').html(res);
+  $('#mes_event1').show();
+  $('#mes_event2').hide();
     $('#mes_event').show();
     $('#crer_event').hide();
     
@@ -247,6 +285,7 @@ $('.ava').click(function(){
 
 $("#nab").click(function() {
    $('#ajout_ami').hide();
+   $('#ajout_click').text("Modifier la liste des invités");
    $('#mes_event').show();
 });
     
