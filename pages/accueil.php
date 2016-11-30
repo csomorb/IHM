@@ -82,7 +82,14 @@
                 </div>
             </div>
         </div>
-        <?php include'menu_laterale_droit.php'; ?>
+        <div class="col s3">
+            <div class="row">
+                
+                <div class="col s12">
+                    <?php include'menu_laterale_droit.php'; ?>
+                </div> 
+            </div>
+        </div>
     </div>
 </div>
     
