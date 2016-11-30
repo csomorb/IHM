@@ -45,8 +45,39 @@
                 <div class="col s12">
                     <div class="card-panel">
                         <!--affichage des derniers message de groupes ' a voir avec barnabas-->
-                        flux de données
+                        <!-- ============================================================================================================================================================================================================================= -->
+                        <div class="card">
+                            <div class="card-content">
+                                <div><img src="img/face1.jpg" alt="" class="circle taille_img_profil"><br/><a>Utilisateur 1</a></div><br/>
+                            </div>
+                            <div class="card-content">
+                                Un x² rentre dans une forêt.  Il en ressort en étant x. <br/>Qu'est-ce qu'il a fait ?
                             
+                           </div>
+                           <div class="card-action">
+                               <a href="#"><i class="small material-icons">thumb_up</i></a> 6 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:36</span><span class="right"><a>2 réponses</a></span>
+                            </div>
+                        </div>
+                        
+                        
+                          <div class="card">
+                            <div class="card-content">
+                                <div><img src="img/face2.jpg" alt="" class="circle taille_img_profil"><br/><a>Utilisateur 2</a></div><br/>
+                            </div>
+                            <div class="card-image">
+                                <img src="https://scontent.xx.fbcdn.net/v/t1.0-9/14184276_10201855880394363_2286520047715810801_n.jpg?oh=b0e82242ffd041edaaef5efa44d877a5&oe=58B97333">
+                                <span class="card-title">Master WIC</span>
+                            </div>
+                             <div class="card-content">
+                                <p>On est au bshm ou a l'imag cette aprem ?</p>
+                            </div>
+                           <div class="card-action">
+                               <a href="#"><i class="small material-icons">thumb_up</i></a> 40 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:36</span><span class="right"><a>2 Réponses</a></span>
+                            </div>
+                        </div>
+                        
+                
+                        <!-- ============================================================================================================================================================================================================================= -->
                     </div>       
                 </div>
             </div>
