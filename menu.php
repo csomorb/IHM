@@ -96,8 +96,10 @@ $(document).ready(function() {
 
 
 <div class="navbar-fixed">
+  
     <nav>
       <div class="nav-wrapper blue lighten-4">
+        <div class="container">
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         
      <form id="search_field">
@@ -128,7 +130,7 @@ $(document).ready(function() {
           <li><a href="/logout_action.php">Logout</a></li>
         </ul>
         
-        
+        </div>
       </nav>
     </div>
   </div>
