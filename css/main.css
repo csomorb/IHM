@@ -132,3 +132,37 @@
 .hauteur_55{
 	height: 55px;
 }
+
+/*Adaptation mobile*/
+
+@media screen and (max-width: 460px) {
+  #option_click {
+    margin-bottom: 8px;
+  }
+  
+  #searchh{
+  	margin-top: 70px;
+  }
+  
+  #mod2{
+  	margin-top: 35px;
+  }
+  
+}
+
+@media screen and (min-width: 460px) {
+.ava{
+  	float:right;
+    margin-top: -35px;
+  }	
+  
+  .avad{
+  	float:right;
+    margin-top: -35px;
+  }	
+  
+  #mod{
+  	float: right;
+  }
+	
+}

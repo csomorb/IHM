@@ -214,7 +214,7 @@
               <span class="card-title">Ajouter des personnes</span>
               <a class="waves-effect waves-light btn right disabled" id="nab">Envoyer les invitations</a>
               <form>
-                <div class="input-field">
+                <div class="input-field" id="searchh">
                   <input id="search2" type="search" required>
                   <label for="search2"><i class="material-icons">search</i></label>
                   <i class="material-icons">close</i>
@@ -225,7 +225,7 @@
                               <img src="img/face4.jpg" alt="" class="circle">
                               <span class="title">Groupe M2WIC</span>
                               <p>Promo 2005</p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn ava">Ajouter</a> 
+                              <a href="#!" class="waves-effect waves-light btn ava">Ajouter</a> 
                             </li>         
                    
                    
@@ -233,7 +233,7 @@
                               <img src="img/face1.jpg" alt="" class="circle">
                               <span class="title">Jean Meurdesoif</span>
                               <p>Etudiant M2WIC</p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn ava">Ajouter</a> 
+                              <a href="#!" class="waves-effect waves-light btn ava">Ajouter</a> 
                             </li>
               
                             
@@ -242,7 +242,7 @@
                               <span class="title">Jerry Kan</span>
                               <p>Etudiant M2WIC
                               </p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn ava">Ajouter</a> 
+                              <a href="#!" class="waves-effect waves-light btn ava">Ajouter</a> 
                             </li>
                        
                             
@@ -251,7 +251,7 @@
                               <span class="title">Juda Bricot </span>
                               <p>Etudiant M2WIC
                               </p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn ava">Ajouter</a>  
+                              <a href="#!" class="waves-effect waves-light btn ava">Ajouter</a>  
                             </li>
                             
                             <li class="collection-item avatar">
@@ -259,7 +259,7 @@
                               <span class="title">Kelly Diote</span>
                               <p>Etudiant M2WIC
                               </p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn ava">Ajouter</a> 
+                              <a href="#!" class="waves-effect waves-light btn ava">Ajouter</a> 
                             </li>
                             
                             <li class="collection-item avatar">
@@ -267,7 +267,7 @@
                               <span class="title">Ray Defesse</span>
                               <p>Etudiant M2WIC
                               </p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn ava">Ajouter</a> 
+                              <a href="#!" class="waves-effect waves-light btn ava">Ajouter</a> 
                             </li>
                             
                             <li class="collection-item avatar">
@@ -275,7 +275,7 @@
                               <span class="title">Sarah Courci</span>
                               <p>Etudiant M2WIC
                               </p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn ava">Ajouter</a>  
+                              <a href="#!" class="waves-effect waves-light btn ava">Ajouter</a>  
                             </li>
                             
                           </ul>
@@ -296,9 +296,9 @@
           <div class="card">
             <div class="card-content">
               <span class="card-title">Ajouter des modérateurs</span>
-              <a class="waves-effect waves-light btn right" id="mod">Revenir à l'événement</a>
+              <a class="waves-effect waves-light btn" id="mod">Revenir à l'événement</a>
               <form>
-                <div class="input-field">
+                <div class="input-field" id="mod2">
                   <input id="search2" type="search" required>
                   <label for="search2"><i class="material-icons">search</i></label>
                   <i class="material-icons">close</i>
@@ -310,14 +310,14 @@
                               <img src="img/juliette.png" alt="" class="circle">
                               <span class="title">Juliette Phone</span>
                               <p>Etudiant M2WIC</p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a> 
+                              <a href="#!" class="waves-effect waves-light btn avad">Ajouter</a> 
                             </li>
                    
                             <li class="collection-item avatar">
                               <img src="img/face1.jpg" alt="" class="circle">
                               <span class="title">Jean Meurdesoif</span>
                               <p>Etudiant M2WIC</p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a> 
+                              <a href="#!" class="waves-effect waves-light btn avad">Ajouter</a> 
                             </li>
               
                             
@@ -326,7 +326,7 @@
                               <span class="title">Jerry Kan</span>
                               <p>Etudiant M2WIC
                               </p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a> 
+                              <a href="#!" class="waves-effect waves-light btn avad">Ajouter</a> 
                             </li>
                        
                             
@@ -335,7 +335,7 @@
                               <span class="title">Juda Bricot </span>
                               <p>Etudiant M2WIC
                               </p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a>  
+                              <a href="#!" class="waves-effect waves-light btn avad">Ajouter</a>  
                             </li>
                             
                             <li class="collection-item avatar">
@@ -343,7 +343,7 @@
                               <span class="title">Kelly Diote</span>
                               <p>Etudiant M2WIC
                               </p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a> 
+                              <a href="#!" class="waves-effect waves-light btn avad">Ajouter</a> 
                             </li>
                             
                             <li class="collection-item avatar">
@@ -351,7 +351,7 @@
                               <span class="title">Ray Defesse</span>
                               <p>Etudiant M2WIC
                               </p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a> 
+                              <a href="#!" class="waves-effect waves-light btn avad">Ajouter</a> 
                             </li>
                             
                             <li class="collection-item avatar">
@@ -359,7 +359,7 @@
                               <span class="title">Sarah Courci</span>
                               <p>Etudiant M2WIC
                               </p>
-                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a>  
+                              <a href="#!" class="waves-effect waves-light btn avad">Ajouter</a>  
                             </li>
                             
                           </ul>
