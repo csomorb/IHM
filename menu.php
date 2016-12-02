@@ -1,4 +1,6 @@
 <script>
+
+
 $(".button-collapse").sideNav();
 $(document).ready(function() { 
   $('#search').keypress(function(){
@@ -28,9 +30,13 @@ $(document).ready(function() {
         var mil2 =`" alt="" class="circle">
                               <a href="/licencePsychoGrenoble"><span class="title">`;                      
         var fin =`</span></a><br/>
-                          <a class="waves-effect waves-light btn">Ajouter comme ami</a>
+                          <a class="waves-effect waves-light btn" href="#">Ajouter comme ami</a>
                               <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
-                            </li>`;   
+                            </li>`;  
+        var fin4 =`</span></a><br/>
+                          <a class="waves-effect waves-light btn" href="#" id="aff" onclick="ajout()">Ajouter comme ami</a>
+                              <a href="#!" class="secondary-content" ><i class="material-icons">email</i></a> 
+                            </li>`;                      
         var fin2 = `</span></a><br/>
                           
                              <a href="#" class="waves-effect waves-light btn secondary-content" onClick="change();" id="ad">Rejoindre</a>
@@ -43,7 +49,7 @@ $(document).ready(function() {
           res+=debut+"face1.jpg"+mil+"Jean Bon"+fin;
         }
         if ('jean boss'.indexOf(rech) > -1 ){
-          res+=debut+"jean.png"+mil+"Jean Boss"+fin;
+          res+=debut+"jean.png"+mil+"Jean Boss"+fin4;
         }
         if ('jean douillet'.indexOf(rech) > -1 ){
           res+=debut+"face2.jpg"+mil+"Jean Douillet"+fin;
@@ -89,6 +95,10 @@ $(document).ready(function() {
   function change(){
     $('#ad').text('Quitter');
   }
+  
+function ajout(){
+  $("#aff").text('retirer de la liste d\'ami');
+}
   
 </script>
 

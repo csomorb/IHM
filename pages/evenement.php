@@ -99,34 +99,26 @@
         <div id="mes_event">
           <div class="col s12">
           <div class="card">
-            <div class="card-content"><div class="card-image"><img src="img/meeting.jpg">
+            <div class="card-content"><div class="card-image"><img src="img/<?php if ($_SESSION['user'] == "jean"){ echo "meeting.jpg";} else {echo "soire.jpg"; }  ?>">
               <span class="card-title" id="titre_event">
               </span></div>
               <p id="event_contenu"></p>
               <a class="waves-effect waves-light btn" id="ajout_click" href="#">Ajouter des personnes</a>
-              
-              
               <hr/>
                <div class="row" id="poster">
- 
+                  <div class="card">
+                    <div class="card-content">
                       <div class="row">
                         <div class="input-field col s12">
                           <textarea id="textarea1" class="materialize-textarea"></textarea>
                           <label for="textarea1">Contenu du post</label>
                         </div>
                       </div>
-  
-                  
-
-  
-                  <button class="btn waves-effect waves-light" type="submit" name="action" id="add_post">Poster
+                      <button class="btn waves-effect waves-light" type="submit" name="action" id="add_post">Poster
                   </button>
-                  
-                  
+                     </div>
+                  </div>
               </div>  
-              
-              
-              
             </div>
           </div>
       </div>
