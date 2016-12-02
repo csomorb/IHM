@@ -1,4 +1,4 @@
-       <div class="col s3">
+
                 <!-- liste des évenement en cours -->
                 <div class="card">
                     <div class="row">
@@ -50,4 +50,3 @@
                         
                     </div>
                 </div>
-            </div>
