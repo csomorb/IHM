@@ -4,7 +4,7 @@
 $(".button-collapse").sideNav();
 
 $(document).ready(function() { 
-  $('#search').keypress(function(){
+  $('#search').keyup(function(){
     if ($('#search').val().length < 1 ){
       $('#res_recherche').show();
     }
