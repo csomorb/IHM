@@ -150,6 +150,13 @@
   
 }
 
+@media screen and (max-width: 993px) {
+	.hide_mobile{
+		display: none;
+	}
+
+}
+
 @media screen and (min-width: 460px) {
 .ava{
   	float:right;
@@ -164,5 +171,31 @@
   #mod{
   	float: right;
   }
+  
+  .gbtn{
+  	margin-top: -55px;
+  	float: right;
+  }
+  
+  .btnt{
+  	margin-top: -35px;
+  	float: right;
+  }
+  
+  .right_d{
+  	float: right;
+    margin-top: -20px;
+  }
 	
 }
+
+a>p{
+	color: black !important;
+	text-decoration: none;
+}
+
+a>span{
+	color: black !important;
+	text-decoration: none;
+}
+

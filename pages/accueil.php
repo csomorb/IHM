@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div class="col s2">
+        <div class="col s12 l2">
             <!-- menu latéral gauche page d'accueil -->
             <div class="card-panel">
                 <?php if ($_SESSION['user'] == "jean"){ ?><img class="responsive-img circle" src="img/jean.png"><?php } ?>
@@ -30,7 +30,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col s7">
+        <div class="col s12 l7">
             <div class="row">
                 <div class="col s12">
                    <div class="card-panel">
@@ -82,7 +82,7 @@
                 </div>
             </div>
         </div>
-        <div class="col s3">
+        <div class="col s12 l3">
             <div class="row">
                 
                 <div class="col s12">

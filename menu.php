@@ -133,7 +133,7 @@ function ajout(){
         <ul class="side-nav" id="mobile-demo">
           <li><a href="#">Recherche</a></li>
           <li><a href="/accueil"><?php echo $_SESSION['user']; ?></a></li>
-          <li><a href="/messagerie">Messagerie</a></li>
+          <li><a href="/messageriem">Messagerie</a></li>
           <li><a href="/groupes">Groupes</a></li>
           <li><a href="/ami">Amis</a></li>
           <li><a href="/evenement">Evénements</a></li>

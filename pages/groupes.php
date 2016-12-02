@@ -15,20 +15,20 @@ if ($_SESSION['user'] == "jean"){
                             <i class="material-icons circle">folder</i>
                             <span class="title">Master WIC</span>
                             <p>Promo 2016<br>
-                               
+                               The geek group
                             </p>
                             </a>
-                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                            <a href="#!" class="waves-effect waves-light btn gbtn">Quitter</a>
                             
                         </li>
                         
-                        <li class="collection-item avatar">
+                        <li class="collection-item avatar"><a href="#">
                             <i class="material-icons circle">folder</i>
                             <span class="title">Master WIC</span>
                             <p>Promo 2005<br>
                                Best Promo ever
-                            </p>
-                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                            </p></a>
+                            <a href="#!" class="waves-effect waves-light btn gbtn">Quitter</a>
                         </li>
                     
                         <li class="collection-item avatar">
@@ -37,7 +37,7 @@ if ($_SESSION['user'] == "jean"){
                             <p>Promo 2005 <br>
                                Un groupe pour rester en contact
                             </p>
-                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                            <a href="#!" class="waves-effect waves-light btn gbtn">Quitter</a>
                         </li>  
                  
                     </ul>
@@ -54,7 +54,7 @@ if ($_SESSION['user'] == "geraldine"){
                                
                             </p>
                             </a>
-                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                            <a href="#!" class="waves-effect waves-light btn btnt">Quitter</a>
                             
                         </li>
                         
@@ -63,7 +63,7 @@ if ($_SESSION['user'] == "geraldine"){
                             <span class="title">Enseignants Grenoble Alpes</span>
                             <p>Année 2015/2016<br>
                             </p>
-                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                            <a href="#!" class="waves-effect waves-light btn btnt">Quitter</a>
                         </li>
                     
                         <li class="collection-item avatar">
@@ -72,7 +72,7 @@ if ($_SESSION['user'] == "geraldine"){
                             <p>Cours 2016 <br>
                         
                             </p>
-                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                            <a href="#!" class="waves-effect waves-light btn btnt">Quitter</a>
                         </li>  
                  
                     </ul>
@@ -90,7 +90,7 @@ if ($_SESSION['user'] == "juliette"){
                                
                             </p>
                             </a>
-                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                            <a href="#!" class="btnt waves-effect waves-light btn">Quitter</a>
                             
                         </li>
                         
@@ -99,7 +99,7 @@ if ($_SESSION['user'] == "juliette"){
                             <span class="title">IHM</span>
                             <p>Cours 2016<br>
                             </p></a>
-                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                            <a href="#!" class="btnt waves-effect waves-light btn">Quitter</a>
                         </li>
                     
                         <li class="collection-item avatar">
@@ -108,7 +108,7 @@ if ($_SESSION['user'] == "juliette"){
                             <p>Promo 2016<br>
                         
                             </p>
-                            <a href="#!" class="secondary-content waves-effect waves-light btn">Quitter</a>
+                            <a href="#!" class="btnt waves-effect waves-light btn">Quitter</a>
                         </li>  
                  
                     </ul>
@@ -153,26 +153,27 @@ if ($_SESSION['user'] == "jean"){
                         Un x² rentre dans une forêt.  Il en ressort en étant x. <br/>Qu'est-ce qu'il a fait ?
 
                         <hr/>
-                        <a href="#"><i class="small material-icons">thumb_up</i></a> 6 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:36</span>
+                        <a href="#"><i class="small material-icons">thumb_up</i></a> 6 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <br/><span class="right_d">11 novembre 10:36</span>
                         <ul class="collection">
                             <li class="collection-item">
                             <img src="img/face1.jpg" alt="" class="circle taille_img_profil">    
                                 Il s'est pris une racine !<br/>
-                            <a href="#"><i class="small material-icons">thumb_up</i></a> 4 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:37</span>    
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 4 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <br/><span class="right_d">11 novembre 10:37</span>    
                             
                             </li>
                             <li class="collection-item">
                                 <img src="img/face3.jpg" alt="" class="circle taille_img_profil">
                                 Haha
                             <br/>
-                            <a href="#"><i class="small material-icons">thumb_up</i></a> 1 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:38</span>  
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 1 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <br/><span class="right_d">11 novembre 10:38</span>  
                             
                             </li>
                             <li class="collection-item">
                                 <img src="img/face6.jpg" alt="" class="circle taille_img_profil">
                                 Ben ça travail bien ici...
                             <br/>
-                            <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:40</span>  
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <br/>
+                            <span class="right_d">11 novembre 10:40</span>  
                             
                             </li>
                             <li class="collection-item">
@@ -431,7 +432,7 @@ if ($_SESSION['user'] == "geraldine"){
                         <li class="collection-item">
                             <img src="img/face1.jpg" alt="" class="circle taille_img_profil">    
                                 Merci<br/>
-                            <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:37</span>    
+                            <a href="#"><i class="small material-icons">thumb_up</i></a> 0 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <br/><span class="right_d">11 novembre 10:37</span>    
                             
                             </li>
                         
