@@ -48,7 +48,7 @@
                         <!-- ============================================================================================================================================================================================================================= -->
                         <div class="card">
                             <div class="card-content">
-                                <div><img src="img/face1.jpg" alt="" class="circle taille_img_profil"><br/><a>Utilisateur 1</a></div><br/>
+                                <div><img src="img/face1.jpg" alt="" class="circle taille_img_profil"><br/><a>Axel Air</a></div><br/>
                             </div>
                             <div class="card-content">
                                 Un x² rentre dans une forêt.  Il en ressort en étant x. <br/>Qu'est-ce qu'il a fait ?
@@ -62,7 +62,7 @@
                         
                           <div class="card">
                             <div class="card-content">
-                                <div><img src="img/face2.jpg" alt="" class="circle taille_img_profil"><br/><a>Utilisateur 2</a></div><br/>
+                                <div><img src="img/face2.jpg" alt="" class="circle taille_img_profil"><br/><a>Alain Proviste</a></div><br/>
                             </div>
                             <div class="card-image">
                                 <img src="https://scontent.xx.fbcdn.net/v/t1.0-9/14184276_10201855880394363_2286520047715810801_n.jpg?oh=b0e82242ffd041edaaef5efa44d877a5&oe=58B97333">

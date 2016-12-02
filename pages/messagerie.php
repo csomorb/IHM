@@ -24,7 +24,23 @@
                 <div class="col s12">
                     <div class="card-panel">
                         <!--affichage des derniers message de groupes ' a voir avec barnabas-->
-                        Discussion en cours
+                        <div class="row">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div><img src="img/face1.jpg" alt="" class="circle taille_img_profil"><br/><a>Utilisateur 1</a></div><br/>
+                                    </div>
+                                    <div class="card-content">
+                                        Bonjour Madame<br/>
+                                        Ou peut on trouver le cours de défence intelectuelle s'il vous plait.
+                                        
+                                        cordialement.
+                                        Axel Air
+                                    </div>
+                                    <div class="card-action">
+                                    <a href="#"><i class="small material-icons">thumb_up</i></a> 6 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:36</span><span class="right"><a>2 réponses</a></span>
+                                </div>
+                            </div>
+                        </div>
                             
                     </div>       
                 </div>
