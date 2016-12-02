@@ -1,4 +1,3 @@
-
 <!-- liste des évenement en cours -->
 <div class="card">
     <div class="row">
@@ -10,14 +9,29 @@
         </div>
         <div class="col s12">
             <div class="card">
-                <div class="card-image">
-                   
-                </div>
                 <div class="card-content">
-               texte
+                    <div class="row">
+
+                        <div class="chip col s12">
+                            <img src="img/face2.jpg" alt="Contact Person">
+                            <a>Alain Proviste</a><a><i class="material-icons right valign-wrapper">add</i></a>
+                        </div>
+                        <div class="chip col s12">
+                            <img src="img/face5.jpg" alt="Contact Person">
+                            <a>Simon Strueux</a><a><i class="material-icons right valign">add</i></a>
+                        </div>
+                        <div class="chip col s12">
+                            <img src="img/face6.jpg" alt="Contact Person">
+                            <a>Cara Melmou</a><a><i class="material-icons right valign">add</i></a>
+                        </div>
+                    </div>
+                    
+                    <!--<div class="chip col s12">
+                        <img src="img/face1.jpg" alt="Contact Person">
+                        <a>Axel Air</a>
+                    </div>-->
                 </div>
             </div>
         </div>
-        
     </div>
 </div>
