@@ -1,5 +1,6 @@
+<? if(isset($_POST['MessageGeraldine'])){$_SESSION['MessageGeraldine'] = $_POST['MessageGeraldine'];} ?>
 <div class="container">
-    <div class="row">
+    <div class="row"> 
         <?php include'liste_amis_laterale.php'; ?>
         
         <!-- Liste des messages -->
@@ -13,37 +14,93 @@
                         </div>
                         
                         <div class="input-field">
-                            <label for="textarea1">Envoyer un nouveau message</label>
-                            <textarea id="textarea1" class="materialize-textarea"></textarea>
-                            <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
-                                <i class="material-icons right"></i>
-                            </button>
+                            <form action="https://ihm-pgns34.c9users.io/messagerie" method="post">
+                                <label for="MessageGeraldine">Envoyer un nouveau message</label>
+                                <textarea id="MessageGeraldine" name="MessageGeraldine" class="materialize-textarea"></textarea>
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+                                    <i class="material-icons right"></i>
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
+                <?php if($_SESSION['user'] == "geraldine"){ ?>
                 <div class="col s12">
                     <div class="card-panel">
                         <!--affichage des derniers message de groupes ' a voir avec barnabas-->
                         <div class="row">
                             <div class="card">
                                 <div class="card-content">
-                                    <div><img src="img/face1.jpg" alt="" class="circle taille_img_profil"><br/><a>Utilisateur 1</a></div><br/>
+                                    <div class="row">
+                                        <div class="col s12"><img src="img/face1.jpg" alt="" class="circle taille_img_profil"><br/><a>Axel Air</a></div><br/>
+                                        <div class="col s12">
+                                             Bonjour Madame<br/>
+                                            Ou peut on trouver le cours de défence intelectuelle s'il vous plait.<br/>
+                                            <br/>
+                                            cordialement.<br/>
+                                            Axel Air<br/>
+                                            <div class="right grey-text darken-1-text">le 08/12/2016</div>
+                                        </div>
                                     </div>
-                                    <div class="card-content">
-                                        Bonjour Madame<br/>
-                                        Ou peut on trouver le cours de défence intelectuelle s'il vous plait.
-                                        
-                                        cordialement.
-                                        Axel Air
+                                </div>
+                                <div class="card-content">
+                                    <div class="row">
+                                        <div class="col s12"><img src="img/geraldine.png" alt="" class="circle taille_img_profil"><br/><a>Geraldine Dupont</a></div><br/>
+                                        <div class="col s12">
+                                            Bonsoir jeune homme<br/>
+                                            Il faut suivre en cours et prendre des notes!<br/>
+                                            Je ne peux rien pour vous.<br/>
+                                            <br/>
+                                            Géraldine D.<br/>
+                                            <div class="right grey-text darken-1-text">le 09/12/2016</div>
+                                        </div>
                                     </div>
+                                </div>
                                     <div class="card-action">
-                                    <a href="#"><i class="small material-icons">thumb_up</i></a> 6 <a href="#"><i class="small material-icons">thumb_down</i></a> 0 <span class="right">11 novembre 10:36</span><span class="right"><a>2 réponses</a></span>
+                                        <div class="input-field">
+                                            <label for="textarea1">répondre</label>
+                                            <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                            <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+                                                <i class="material-icons right"></i>
+                                            </button>
+                                        </div>
                                 </div>
                             </div>
                         </div>
-                            
                     </div>       
                 </div>
+                <?php } else if (isset($_SESSION['MessageGeraldine'])) { ?>
+                <div class="col s12">
+                    <div class="card-panel">
+                        <!--affichage des derniers message de groupes ' a voir avec barnabas-->
+                        <div class="row">
+                            <div class="card">
+                                <div class="card-content">
+                                    <div class="row">
+                                        <div class="col s12"><img src="img/geraldine.png" alt="" class="circle taille_img_profil"><br/><a>Geraldine Dupont</a></div><br/>
+                                        <div class="col s12">
+                                            <?php 
+                                                $message=str_replace('\n', '<br/>', $_SESSION['MessageGeraldine']);
+                                                echo $message;
+                                            ?>
+                                            <div class="right grey-text darken-1-text">le 09/12/2016</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-action">
+                                    <div class="input-field">
+                                        <label for="textarea1">répondre</label>
+                                        <textarea id="textarea1" class="materialize-textarea"></textarea>
+                                        <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
+                                            <i class="material-icons right"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>       
+                </div>
+                <?php } ?>
             </div>
         </div>
        <div class="col s3">
