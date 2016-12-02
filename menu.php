@@ -108,7 +108,7 @@ function ajout(){
 <div class="navbar-fixed">
   
     <nav>
-      <div class="nav-wrapper blue lighten-4">
+      <div class="nav-wrapper indigo accent-4">
         <div class="container">
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         
