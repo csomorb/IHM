@@ -99,30 +99,47 @@
         <div id="mes_event">
           <div class="col s12">
           <div class="card">
-            <div class="card-content"><div class="card-image"><img src="img/<?php if ($_SESSION['user'] == "jean"){ echo "meeting.jpg";} else {echo "soire.jpg"; }  ?>">
+            <div class="card-content"><div class="card-image"><img src="img/<?php if ($_SESSION['user'] == "jean"){ echo "diner.png";} else {echo "soire.jpg"; }  ?>">
               <span class="card-title" id="titre_event">
               </span></div>
               <p>Organisé par : </p>
       <div class="row">       
       <div class="col s12 m8 l4">          
         <div class="card-panel padding_8 grey lighten-5 z-depth-1">
-          <div class="no_margin_bottom row valign-wrapper">
+          <div class="no_margin_bottom row valign-wrapper hauteur_55">
            
-              <img src="img/jean.png" alt="" class="circle responsive-img taille_img"> <!-- notice the "circle" class -->
+              <img src="img/<?php if ($_SESSION['user'] == "jean"){ echo "jean.png";} else {echo "roger.png"; }  ?>" alt="" class="circle responsive-img taille_img"> <!-- notice the "circle" class -->
            
      
               <span class="black-text">
-                Jean BOSS
+                <?php if ($_SESSION['user'] == "jean"){ echo "Jean BOSS";} else {echo "Roger FIESTA"; }  ?>
               </span>
         
           </div>
         </div>
       </div>      
-              <div class="col s12 m2 l6">
-              </div>
+             
+             <div class="col s12 m8 l4" id="julie">          
+        <div class="card-panel padding_8 grey lighten-5 z-depth-1">
+          <div class="no_margin_bottom row valign-wrapper hauteur_55">
+           
+              <img src="img/juliette.png" alt="" class="circle responsive-img taille_img"> <!-- notice the "circle" class -->
+           
+     
+              <span class="black-text">
+                Juliette PHONE
+              </span>
+        
+          </div>
+        </div>
+      </div> 
+             
+             
               </div> 
               <p id="event_contenu"></p>
+              <a class="waves-effect waves-light btn" id="option_click" href="#"> <i class="material-icons">settings</i></a>
               <a class="waves-effect waves-light btn" id="ajout_click" href="#">Ajouter des personnes</a>
+              
               <hr/>
                <div class="row" id="poster">
                   <div class="card">
@@ -155,7 +172,40 @@
         </div>
       </div>
     
-
+    <div class="row" id="option">
+      <div class="col s12">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Options</span><br/>
+              <div class="row">
+                
+              <a class="waves-effect waves-light btn col s12 m8 l5" >Modifier l'horaire de l'événement</a>
+              </div>
+              <div class="row">
+              <a class="waves-effect waves-light btn col s12 m8 l5" >Modifier le lieu de l'événement</a>
+              </div>
+              <div class="row">
+              <a class="waves-effect waves-light btn col s12 m8 l5" >Modifier le titre de l'événement</a>
+              </div>
+              <div class="row">
+              <a class="waves-effect waves-light btn col s12 m8 l5" >Modifier la description de l'événement</a>
+              </div>
+              <div class="row">
+              <a class="waves-effect waves-light btn col s12 m8 l5" >Envoyer un messae à tous les invités</a>
+              </div>
+              <div class="row">
+              
+              <a class="waves-effect waves-light btn col s12 m8 l5" id="mode_click">Ajouter un modérateur</a>
+              </div>
+              <div class="row">
+              <a class="waves-effect waves-light btn col s12 m8 l5 red darken-4" >Supprimer un modérateur</a></div>
+              <div class="row">
+              <a class="waves-effect waves-light btn col s12 m8 l5 red darken-4" >Supprimer l'événement</a></div>
+              
+            </div>
+          </div>
+       </div>
+    </div>
     
     <div class="row" id="ajout_ami">
         <div class="col s12">
@@ -239,6 +289,90 @@
           </div>
         </div>
       </div>
+      
+      
+      <div class="row" id="ajout_moderateur">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title">Ajouter des modérateurs</span>
+              <a class="waves-effect waves-light btn right" id="mod">Revenir à l'événement</a>
+              <form>
+                <div class="input-field">
+                  <input id="search2" type="search" required>
+                  <label for="search2"><i class="material-icons">search</i></label>
+                  <i class="material-icons">close</i>
+                </div>
+                
+                <ul class="collection">
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/juliette.png" alt="" class="circle">
+                              <span class="title">Juliette Phone</span>
+                              <p>Etudiant M2WIC</p>
+                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a> 
+                            </li>
+                   
+                            <li class="collection-item avatar">
+                              <img src="img/face1.jpg" alt="" class="circle">
+                              <span class="title">Jean Meurdesoif</span>
+                              <p>Etudiant M2WIC</p>
+                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a> 
+                            </li>
+              
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face2.jpg" alt="" class="circle">
+                              <span class="title">Jerry Kan</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a> 
+                            </li>
+                       
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face3.jpg" alt="" class="circle">
+                              <span class="title">Juda Bricot </span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a>  
+                            </li>
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face4.jpg" alt="" class="circle">
+                              <span class="title">Kelly Diote</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a> 
+                            </li>
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face5.jpg" alt="" class="circle">
+                              <span class="title">Ray Defesse</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a> 
+                            </li>
+                            
+                            <li class="collection-item avatar">
+                              <img src="img/face6.jpg" alt="" class="circle">
+                              <span class="title">Sarah Courci</span>
+                              <p>Etudiant M2WIC
+                              </p>
+                              <a href="#!" class="secondary-content waves-effect waves-light btn avad">Ajouter</a>  
+                            </li>
+                            
+                          </ul>
+                
+                
+                
+              </form>
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
     
     
 </div>
@@ -266,7 +400,9 @@ $('#mes_event').hide();
 //$('.mes_event').show();
 $('.mes_event2').show();
 $('#crer_event').hide();
-
+$('#option').hide();
+$('#ajout_moderateur').hide();
+$('#julie').hide();
 
 $('#click_crer').click(function() {
   $('#mes_event1').hide();
@@ -294,10 +430,31 @@ $('.ava').click(function(){
   $('#nab').removeClass("disabled");
 });
 
+$('.avad').click(function(){
+  $(this).text("Retirer");
+});
+
 $("#nab").click(function() {
    $('#ajout_ami').hide();
    $('#ajout_click').text("Modifier la liste des invités");
    $('#mes_event').show();
+});
+
+$("#option_click").click(function(){
+  $('#option').show();
+  $('#mes_event1').hide();
+});
+    
+
+$('#mode_click').click(function(){
+  $('#option').hide();
+  $('#ajout_moderateur').show();
+});
+
+$('#mod').click(function(){
+  $('#ajout_moderateur').hide();
+  $('#mes_event1').show();
+  $('#julie').show();
 });
     
 </script>
