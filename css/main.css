@@ -113,4 +113,18 @@
 .dtp .center { text-align: center; }
 		
 		
-		
+.no_margin_bottom{
+	margin-bottom: 0px !important;
+}		
+
+.padding_8{
+	padding: 8px !important;
+}
+
+.taille_img{
+    width : 55px;
+    height : 55px;
+    float: left;
+    margin-left: 10px;
+    margin-right: 5px;
+}

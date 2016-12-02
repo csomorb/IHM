@@ -102,6 +102,25 @@
             <div class="card-content"><div class="card-image"><img src="img/<?php if ($_SESSION['user'] == "jean"){ echo "meeting.jpg";} else {echo "soire.jpg"; }  ?>">
               <span class="card-title" id="titre_event">
               </span></div>
+              <p>Organisé par : </p>
+      <div class="row">       
+      <div class="col s12 m8 l4">          
+        <div class="card-panel padding_8 grey lighten-5 z-depth-1">
+          <div class="no_margin_bottom row valign-wrapper">
+           
+              <img src="img/jean.png" alt="" class="circle responsive-img taille_img"> <!-- notice the "circle" class -->
+           
+     
+              <span class="black-text">
+                Jean BOSS
+              </span>
+        
+          </div>
+        </div>
+      </div>      
+              <div class="col s12 m2 l6">
+              </div>
+              </div> 
               <p id="event_contenu"></p>
               <a class="waves-effect waves-light btn" id="ajout_click" href="#">Ajouter des personnes</a>
               <hr/>
