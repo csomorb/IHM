@@ -2,13 +2,14 @@
 
 
 $(".button-collapse").sideNav();
+
 $(document).ready(function() { 
   $('#search').keypress(function(){
     if ($('#search').val().length < 1 ){
-      $('.navbar-fixed').next().show();
+      $('#res_recherche').show();
     }
     else{
-      $('.navbar-fixed').next().next().next().hide();
+      $('#page_content').hide();
       var res = `<div class="container">
       <div class="row">
         <div class="col s12">
@@ -131,7 +132,7 @@ function ajout(){
                 <li><a href="/logout_action.php">Logout</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-          <li><a href="#">Recherche</a></li>
+          <li><a href="#" class="searchclick2">Recherche</a></li>
           <li><a href="/accueil"><?php echo $_SESSION['user']; ?></a></li>
           <li><a href="/messageriem">Messagerie</a></li>
           <li><a href="/groupes">Groupes</a></li>
@@ -155,12 +156,21 @@ function ajout(){
     $("#search").focus();
   });
   
+  $(".searchclick2").click(function(){
+    $("#search_field").show();
+    $("#search").focus();
+    $('.button-collapse').hide();
+    $('.button-collapse').sideNav('hide');
+  });
+  
    $("#close_search").click(function(){
     $(".hide-on-med-and-down").show();
     $("#search_field").hide();
     $("#search").focus();
     $('#res_recherche').hide();
-    $('.navbar-fixed').next().next().next().show();
+    $('#page_content').show();
+    $('.button-collapse').show();
+    $(".side-nav").show();
   });
   
 </script>

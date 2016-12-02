@@ -56,7 +56,9 @@
         
     
             if (file_exists($page)) {
+                echo '<div id="page_content">';
 				require_once($page);
+				echo '</div>';
 			}
             else {
                 require_once("404.php");
