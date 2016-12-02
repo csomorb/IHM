@@ -1,5 +1,16 @@
 <?php
     session_start();
+    
+    if(isset($_POST['MessageGeraldine']))
+    {
+        //echo 'Ya un postGéraldine';
+        $value = $_POST["MessageGeraldine"];
+        //echo $value;
+        //$_SESSION['MessageGeraldine'] = $_POST['MessageGeraldine'];
+        setcookie('MessageGeraldine', $value,  (time()+86400)); // 1 day
+        //$_COOKIE["MessageGeraldine"] = $_POST["MessageGeraldine"];(time() + 3600)
+    } 
+    
     $querystring = htmlspecialchars($_SERVER['QUERY_STRING']);
     if (empty($querystring)) {
         $params = "login";

@@ -1,4 +1,3 @@
-<? if(isset($_POST['MessageGeraldine'])){$_SESSION['MessageGeraldine'] = $_POST['MessageGeraldine'];} ?>
 <div class="container">
     <div class="row"> 
         <?php include'liste_amis_laterale.php'; ?>
@@ -69,7 +68,7 @@
                         </div>
                     </div>       
                 </div>
-                <?php } else if (isset($_SESSION['MessageGeraldine'])) { ?>
+                <?php } else if (isset($_COOKIE['MessageGeraldine'])) { ?>
                 <div class="col s12">
                     <div class="card-panel">
                         <!--affichage des derniers message de groupes ' a voir avec barnabas-->
@@ -80,7 +79,7 @@
                                         <div class="col s12"><img src="img/geraldine.png" alt="" class="circle taille_img_profil"><br/><a>Geraldine Dupont</a></div><br/>
                                         <div class="col s12">
                                             <?php 
-                                                $message=str_replace('\n', '<br/>', $_SESSION['MessageGeraldine']);
+                                                $message=str_replace('\n', '<br/>', $_COOKIE['MessageGeraldine']);
                                                 echo $message;
                                             ?>
                                             <div class="right grey-text darken-1-text">le 09/12/2016</div>
@@ -110,9 +109,9 @@
                 </div> 
                 <div class="col s12">
                     <?php include'menu_laterale_droit.php'; ?>
+                    <?php //print_r($_COOKIE['message']); ?>
                 </div> 
             </div>
         </div>
     </div>
 </div>
-    
