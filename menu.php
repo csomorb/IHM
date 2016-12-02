@@ -31,20 +31,20 @@ $(document).ready(function() {
         var mil2 =`" alt="" class="circle">
                               <a href="/licencePsychoGrenoble"><span class="title">`;                      
         var fin =`</span></a><br/>
-                          <a class="waves-effect waves-light btn" href="#">Ajouter comme ami</a>
+                          <a class="waves-effect waves-light btn" href="#">Ajouter</a>
                               <a href="#!" class="secondary-content"><i class="material-icons">email</i></a> 
                             </li>`;  
         var fin4 =`</span></a><br/>
-                          <a class="waves-effect waves-light btn" href="#" id="aff" onclick="ajout()">Ajouter comme ami</a>
+                          <a class="waves-effect waves-light btn" href="#" id="aff" onclick="ajout()">Ajouter</a>
                               <a href="#!" class="secondary-content" ><i class="material-icons">email</i></a> 
                             </li>`;                      
         var fin2 = `</span></a><br/>
                           
-                             <a href="#" class="waves-effect waves-light btn secondary-content" onClick="change();" id="ad">Rejoindre</a>
+                             <a href="#" class="waves-effect waves-light btn btna" onClick="change();" id="ad">Rejoindre</a>
                             </li>`;
         var fin3 = `</span></a><br/>
                           
-                             <a href="#" class="waves-effect waves-light btn secondary-content">Rejoindre</a>
+                             <a href="#" class="waves-effect waves-light btn btna">Rejoindre</a>
                             </li>`;
         if ('jean bon'.indexOf(rech) > -1 ){
           res+=debut+"face1.jpg"+mil+"Jean Bon"+fin;
