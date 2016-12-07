@@ -125,7 +125,7 @@ function ajout(){
          
                 <li><a href="#" class="searchclick"><i class="material-icons">search</i></a></li>
                 <li><a href="/accueil"><?php echo $_SESSION['user']; ?></a></li>
-                <li><a href="/messagerie">Messagerie</a></li>
+                <li><a href="/messagerie">Messagerie<?php if((isset($_COOKIE['MessageGeraldine']) )&& ($_SESSION['user'] != 'geraldine')) { echo '(1)';} ?></a></li>
                 <li><a href="/groupes">Groupes</a></li>
                 <li><a href="/ami">Amis</a></li>
                 <li><a href="/evenement">Evénements</a></li>

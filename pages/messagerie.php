@@ -13,13 +13,13 @@
                         </div>
                         
                         <div class="input-field">
-                            <form action="https://ihm-pgns34.c9users.io/messagerie" method="post">
+                            <?php if($_SESSION['user'] == "geraldine"){ ?><form action="https://ihm-pgns34.c9users.io/messagerie" method="post"><?php } ?>
                                 <label for="MessageGeraldine">Envoyer un nouveau message</label>
                                 <textarea id="MessageGeraldine" name="MessageGeraldine" class="materialize-textarea"></textarea>
                                 <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
                                     <i class="material-icons right"></i>
                                 </button>
-                            </form>
+                            <?php if($_SESSION['user'] == "geraldine"){ ?></form><?php } ?>
                         </div>
                     </div>
                 </div>
