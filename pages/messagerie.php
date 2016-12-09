@@ -31,7 +31,7 @@
                             <label>Destinataire : </label>
                         </div>
                         <div class="input-field">
-                            <?php if($_SESSION['user'] == "geraldine"){ ?><form action="https://ihm-pgns34.c9users.io/messagerie" method="post"><?php } ?>
+                            <?php if($_SESSION['user'] == "geraldine"){ ?><form action="/messagerie" method="post"><?php } ?>
                                 <label for="MessageGeraldine">Envoyer un nouveau message</label>
                                 <textarea id="MessageGeraldine" name="MessageGeraldine" class="materialize-textarea"></textarea>
                                 <button class="btn waves-effect waves-light" type="submit" name="action">Envoyer
