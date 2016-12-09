@@ -23,7 +23,7 @@
                     <div class="chip col s12">
                         <img src="img/geraldine.png" alt="Contact Person">
                         <a>Geraldine Dupont</a>
-                        <i class="small material-icons valign right">email</i>
+                        <?php if((isset($_COOKIE['MessageGeraldine']) )&& ($_SESSION['user'] != 'geraldine')) { ?><i class="small material-icons valign right">email</i><?php } ?>
                     </div>
                     </p>
                 </div>

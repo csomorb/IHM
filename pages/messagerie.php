@@ -1,3 +1,8 @@
+<?php if($_POST['MessageGeraldine'] != ""){
+    $_SESSION['messageEnvoi']="yes";
+}?>
+
+
 <div class="container">
     <div class="row"> 
         <?php include'liste_amis_laterale.php'; ?>
@@ -8,10 +13,23 @@
                 <div class="col s12">
                    <div class="card-panel">
                         <!-- formulaire message pouvant etre poster par l'utilisateur -->
+                        <script>$   
+                            (document).ready(function() {
+                            $('select').material_select();
+                             //$('option').material_option();
+                            });
+                        </script>
                         <div class="input-field">
-                            Destinataire : 
+                            <select>
+                              <option value="0">Tous</option>
+                              <option value="1">Axel Air</option>
+                              <option value="1">Jerry Kan</option>
+                              <option value="1">Larry Bambelle</option>
+                              <option value="1">Juliette Phone</option>
+                              <option value="1">Geraldine Dupont</option>
+                            </select>
+                            <label>Destinataire : </label>
                         </div>
-                        
                         <div class="input-field">
                             <?php if($_SESSION['user'] == "geraldine"){ ?><form action="https://ihm-pgns34.c9users.io/messagerie" method="post"><?php } ?>
                                 <label for="MessageGeraldine">Envoyer un nouveau message</label>
@@ -23,6 +41,18 @@
                         </div>
                     </div>
                 </div>
+                <?php 
+                    if(($_SESSION['user'] == "geraldine")&&($_SESSION['messageEnvoi'] == "yes")){
+                    $_SESSION['messageEnvoi'] = "no";
+                ?>
+                <div class="col s12">
+                   <div class="card-panel teal lighten-2 center-align">
+                        Votre message à bien été envoyé!
+                    </div>
+                </div>
+                <?php
+                    }
+                ?>
                 <?php if($_SESSION['user'] == "geraldine"){ ?>
                 <div class="col s12">
                     <div class="card-panel">
